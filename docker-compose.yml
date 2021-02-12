@@ -1,0 +1,16 @@
+version: "3.3"
+
+services:
+  # Home Assistant Core - https://www.home-assistant.io/
+  homeassistant:
+    container_name: homeassistant
+    image: homeassistant/home-assistant:2021.2.0
+    restart: unless-stopped
+    network_mode: host
+    volumes:
+      - ./services/homeassistant/config:/config
+      - /etc/localtime:/etc/localtime:ro
+    environment:
+      - TZ=Europe/Copenhagen
+    ports:
+      - "8123:8123"
