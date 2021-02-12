@@ -12,5 +12,3 @@ services:
       - /etc/localtime:/etc/localtime:ro
     environment:
       - TZ=Europe/Copenhagen
-    ports:
-      - "8123:8123"
