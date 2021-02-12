@@ -1,0 +1,26 @@
+{
+    "version": 1,
+    "key": "core.restore_state",
+    "data": [
+        {
+            "state": {
+                "entity_id": "person.jonathan_ostrup",
+                "state": "unknown",
+                "attributes": {
+                    "editable": true,
+                    "id": "jonathan_ostrup",
+                    "user_id": "98d04c57db5a40e68786bd09d3af931c",
+                    "friendly_name": "Jonathan \u00d8strup"
+                },
+                "last_changed": "2021-02-12T13:59:29.311615+00:00",
+                "last_updated": "2021-02-12T13:59:29.311615+00:00",
+                "context": {
+                    "id": "ea2babcda520c74c079b80c84acdb55b",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2021-02-12T14:36:26.422085+00:00"
+        }
+    ]
+}

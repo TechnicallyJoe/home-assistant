@@ -1,0 +1,211 @@
+{
+    "version": 1,
+    "key": "core.device_registry",
+    "data": {
+        "devices": [
+            {
+                "config_entries": [
+                    "612482a0fcce9abd3754993553ceadd7"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "met"
+                    ]
+                ],
+                "manufacturer": "Met.no",
+                "model": "Forecast",
+                "name": "Forecast",
+                "sw_version": null,
+                "entry_type": "service",
+                "id": "ea6dff84b5356d534c7c15a3743d6a04",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "274d23a275008cbc66a14d0b56b334f2"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "cast",
+                        "557365aa89005b5c46f264960c7ea5f9"
+                    ]
+                ],
+                "manufacturer": "Google Inc.",
+                "model": "Google Nest Mini",
+                "name": "Mikro",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "2eb2b6146e508adcdc722e99fd996d78",
+                "via_device_id": null,
+                "area_id": "master_bedroom",
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "274d23a275008cbc66a14d0b56b334f2"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "cast",
+                        "c805e3dc3b66dd0fc980185f3b9727dc"
+                    ]
+                ],
+                "manufacturer": "Google Inc.",
+                "model": "Google Nest Mini",
+                "name": "Mini",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "e6a73944c4a7beb7e9a0da726d7490e7",
+                "via_device_id": null,
+                "area_id": "wash_room",
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "274d23a275008cbc66a14d0b56b334f2"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "cast",
+                        "fb23d254ec13ec613749eb165a8079b8"
+                    ]
+                ],
+                "manufacturer": "Google Inc.",
+                "model": "Nest Audio",
+                "name": "Monstrum",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "243faaadea7d2950487d3d7c13176da3",
+                "via_device_id": null,
+                "area_id": "living_room",
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "274d23a275008cbc66a14d0b56b334f2"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "cast",
+                        "ca87bec25141cafa00b28d19f1ec3be3"
+                    ]
+                ],
+                "manufacturer": "Google Inc.",
+                "model": "Chromecast",
+                "name": "TV",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "5d19f7d38dc6f8df565c9d5db08ed3e6",
+                "via_device_id": null,
+                "area_id": "living_room",
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "274d23a275008cbc66a14d0b56b334f2"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "cast",
+                        "0e71c1f26d74ce68aa5b4c738318f3a7"
+                    ]
+                ],
+                "manufacturer": "Google Inc.",
+                "model": "Google Nest Hub",
+                "name": "B\u00f8ffen",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "8a4d3af7c5a47708ad124ea1a490342e",
+                "via_device_id": null,
+                "area_id": "evas_room",
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "274d23a275008cbc66a14d0b56b334f2"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "cast",
+                        "f11fd407ca938abb54fc7f5b91aa4ee7"
+                    ]
+                ],
+                "manufacturer": "Google Inc.",
+                "model": "Nest Audio",
+                "name": "Basement speaker",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "98bc8891f6a9dd82b4f7b49f9c1e0102",
+                "via_device_id": null,
+                "area_id": "basement",
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "274d23a275008cbc66a14d0b56b334f2"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "cast",
+                        "f910d60e9fef6ded53617605a95fb6fd"
+                    ]
+                ],
+                "manufacturer": "Google Inc.",
+                "model": "Google Nest Hub",
+                "name": "Makro",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "169f2d05603432317f4a8b269a9a429e",
+                "via_device_id": null,
+                "area_id": "kitchen",
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "9da98f1d3c999d01872b90ce85c9a463"
+                ],
+                "connections": [
+                    [
+                        "upnp",
+                        "uuid:22ce1d4c-c16e-4eb6-8852-5b1701884e36"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "upnp",
+                        "uuid:22ce1d4c-c16e-4eb6-8852-5b1701884e36"
+                    ]
+                ],
+                "manufacturer": "ZYXEL",
+                "model": "VMG3926-B10A",
+                "name": "VMG3926-B10A",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "88d1bda3068a9cb9b8b5016c40cbb6da",
+                "via_device_id": null,
+                "area_id": "living_room",
+                "name_by_user": null,
+                "disabled_by": null
+            }
+        ],
+        "deleted_devices": []
+    }
+}

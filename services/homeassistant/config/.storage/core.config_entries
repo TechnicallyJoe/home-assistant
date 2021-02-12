@@ -1,0 +1,57 @@
+{
+    "version": 1,
+    "key": "core.config_entries",
+    "data": {
+        "entries": [
+            {
+                "entry_id": "612482a0fcce9abd3754993553ceadd7",
+                "version": 1,
+                "domain": "met",
+                "title": "Home",
+                "data": {
+                    "track_home": true
+                },
+                "options": {},
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "source": "onboarding",
+                "connection_class": "cloud_poll",
+                "unique_id": null
+            },
+            {
+                "entry_id": "274d23a275008cbc66a14d0b56b334f2",
+                "version": 1,
+                "domain": "cast",
+                "title": "Google Cast",
+                "data": {
+                    "user_id": "3318642354ac49e3b0292bf8b5614972"
+                },
+                "options": {},
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "source": "zeroconf",
+                "connection_class": "local_push",
+                "unique_id": "cast"
+            },
+            {
+                "entry_id": "9da98f1d3c999d01872b90ce85c9a463",
+                "version": 1,
+                "domain": "upnp",
+                "title": "VMG3926-B10A",
+                "data": {
+                    "udn": "uuid:22ce1d4c-c16e-4eb6-8852-5b1701884e36",
+                    "st": "urn:schemas-upnp-org:device:InternetGatewayDevice:1"
+                },
+                "options": {},
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "source": "ssdp",
+                "connection_class": "local_poll",
+                "unique_id": "uuid:22ce1d4c-c16e-4eb6-8852-5b1701884e36::urn:schemas-upnp-org:device:InternetGatewayDevice:1"
+            }
+        ]
+    }
+}

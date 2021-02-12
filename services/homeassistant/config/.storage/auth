@@ -1,0 +1,83 @@
+{
+    "version": 1,
+    "key": "auth",
+    "data": {
+        "users": [
+            {
+                "id": "98d04c57db5a40e68786bd09d3af931c",
+                "group_ids": [
+                    "system-admin"
+                ],
+                "is_owner": true,
+                "is_active": true,
+                "name": "Jonathan \u00d8strup",
+                "system_generated": false
+            },
+            {
+                "id": "3318642354ac49e3b0292bf8b5614972",
+                "group_ids": [
+                    "system-admin"
+                ],
+                "is_owner": false,
+                "is_active": true,
+                "name": "Home Assistant Cast",
+                "system_generated": true
+            }
+        ],
+        "groups": [
+            {
+                "id": "system-admin",
+                "name": "Administrators"
+            },
+            {
+                "id": "system-users",
+                "name": "Users"
+            },
+            {
+                "id": "system-read-only",
+                "name": "Read Only"
+            }
+        ],
+        "credentials": [
+            {
+                "id": "b095611349a440dfa47a8914b489d75a",
+                "user_id": "98d04c57db5a40e68786bd09d3af931c",
+                "auth_provider_type": "homeassistant",
+                "auth_provider_id": null,
+                "data": {
+                    "username": "jonathan"
+                }
+            }
+        ],
+        "refresh_tokens": [
+            {
+                "id": "bb72c1a2c6a14348bfa2cfe1ebdae5ed",
+                "user_id": "98d04c57db5a40e68786bd09d3af931c",
+                "client_id": "http://192.168.1.11:8123/",
+                "client_name": null,
+                "client_icon": null,
+                "token_type": "normal",
+                "created_at": "2021-02-12T14:00:47.274381+00:00",
+                "access_token_expiration": 1800.0,
+                "token": "10dd864cf7536348e1484f8759e17c8593dc2c3f8a5703745d78e5b7481357a953ff6f1fb761cc7fc9a05d856935e93bcdda812a00a10684a7449c939e94778b",
+                "jwt_key": "5932374f7c8d7b67ab16a7488871168a9f5540d3c138ceda48b64c9cd87cb3690e25f23b33890559651ca3b9a39e4f20b0c05641496aef1d74255e504a93886b",
+                "last_used_at": "2021-02-12T14:00:47.274852+00:00",
+                "last_used_ip": "192.168.1.217"
+            },
+            {
+                "id": "d18a2bea73ce4256ab3d0f4b72069b30",
+                "user_id": "3318642354ac49e3b0292bf8b5614972",
+                "client_id": null,
+                "client_name": null,
+                "client_icon": null,
+                "token_type": "system",
+                "created_at": "2021-02-12T14:13:55.947322+00:00",
+                "access_token_expiration": 1800.0,
+                "token": "99701370037d1ca1bd9c2cc8404e2ca25e9d485a4267c6267886cd17881b2fc34e6992054c03a8146e4ac33c4985271854869dee8fd8e0af7ce2f4d0878bb145",
+                "jwt_key": "a618d1caa82f56608363089886a47399196ba00a18b1ee2ad131c3b1eabe1d8ce86c6408d31cfe022aea224366f6edd255bb6dfee5b8425bf56d08de69c6b4c2",
+                "last_used_at": null,
+                "last_used_ip": null
+            }
+        ]
+    }
+}
