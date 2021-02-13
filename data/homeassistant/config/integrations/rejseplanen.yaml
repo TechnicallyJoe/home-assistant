@@ -1,0 +1,16 @@
+# https://www.home-assistant.io/integrations/rejseplanen/
+
+sensor:
+  - platform: rejseplanen
+    name: !secret rejseplanen_one_name
+    stop_id: !secret rejseplanen_one_stop_id
+    route: !secret rejseplanen_one_route
+    direction:
+      - !secret rejseplanen_one_direction
+
+  - platform: rejseplanen
+    name: !secret rejseplanen_two_name
+    stop_id: !secret rejseplanen_two_stop_id
+    route: !secret rejseplanen_two_route
+    direction:
+      - !secret rejseplanen_two_direction
