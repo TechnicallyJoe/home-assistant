@@ -4,6 +4,13 @@
 # Inspired by frencks home assistant configuration. - https://github.com/TechnicallyJoe/home-assistant-config
 
 homeassistant:
+  name: Fortet
+  latitude: !secret fortet_latitude
+  longitude: !secret fortet_longitude
+  elevation: !secret fortet_elevation
+  unit_system: metric
+  time_zone: Europe/Copenhagen
+
   packages: !include_dir_named integrations
 
 default_config:
