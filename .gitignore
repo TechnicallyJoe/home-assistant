@@ -7,3 +7,6 @@
 
 # homeassistant
 secrets.yaml
+.storage
+.cloud
+.HA_VERSION

@@ -1,0 +1,9 @@
+# Created by TechnicallyJoe
+# github: https://github.com/TechnicallyJoe
+
+# Inspired by frencks home assistant configuration. - https://github.com/TechnicallyJoe/home-assistant-config
+
+homeassistant:
+  packages: !include_dir_named integrations
+
+default_config:
