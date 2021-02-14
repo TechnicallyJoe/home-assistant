@@ -1,6 +1,47 @@
 version: "3.3"
 
 services:
+  traefik:
+    image: traefik:v2.4
+    container_name: traefik
+    restart: unless-stopped
+    command:
+      # Debug configurations
+      #- "--log.level=DEBUG"
+      # Dashboard configurations
+      - "--api=true"
+      - "--api.insecure=true"
+      - "--api.dashboard=true"
+      # Docker backend configurations
+      - "--providers.docker=true"
+      - "--providers.docker.exposedbydefault=false"
+      # Entrypoint configurations
+      - "--entrypoints.web.address=:80"
+      - "--entrypoints.websecure.address=:443"
+      # LetsEncrypt configurations
+      - "--certificatesresolvers.letsencryptresolver.acme.caserver=${LE_CASERVER}"
+      - "--certificatesresolvers.letsencryptresolver.acme.dnschallenge=true"
+      - "--certificatesresolvers.letsencryptresolver.acme.dnschallenge.provider=cloudflare"
+      - "--certificatesresolvers.letsencryptresolver.acme.email=${ACME_EMAIL}"
+      - "--certificatesresolvers.letsencryptresolver.acme.storage=/letsencrypt/acme.json"
+      # Global HTTP -> HTTPS
+      - "--entrypoints.web.http.redirections.entryPoint.to=websecure"
+      - "--entrypoints.web.http.redirections.entryPoint.scheme=https"
+    ports:
+      - 80:80
+      - 443:443
+      - 8080:8080
+    volumes:
+      - "./services/traefik/letsencrypt:/letsencrypt"
+      - "/var/run/docker.sock:/var/run/docker.sock:ro"
+    environment:
+      - CF_DNS_API_TOKEN=${CF_DNS_API_TOKEN}
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.traefik.rule=Host(`traefik.${DEVICE}.${DOMAIN}`)"
+      - "traefik.http.routers.traefik.entrypoints=websecure"
+      - "traefik.http.routers.traefik.tls.certresolver=letsencryptresolver"
+      - "traefik.http.routers.traefik.service=api@internal"
   # Home Assistant Core - https://www.home-assistant.io/
   homeassistant:
     container_name: homeassistant
@@ -12,3 +53,9 @@ services:
       - /etc/localtime:/etc/localtime:ro
     environment:
       - TZ=Europe/Copenhagen
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.pihole.rule=Host(`ha.${DOMAIN}`)"
+      - "traefik.http.routers.pihole.entrypoints=websecure"
+      - "traefik.http.routers.pihole.tls.certresolver=letsencryptresolver"
+      - "traefik.http.services.pihole.loadbalancer.server.port=80"
