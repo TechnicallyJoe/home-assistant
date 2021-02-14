@@ -6,7 +6,7 @@ garbage_collection:
       frequency: weekly
       expire_after: "12:00"
       collection_days:
-        - friday
+        - fri
 
     - name: Storskrald
       frequency: every-n-weeks
@@ -14,7 +14,7 @@ garbage_collection:
       first_week: 2
       expire_after: "07:00"
       collection_days:
-        - tuesday
+        - tue
 
     - name: Farligt Affald
       frequency: every-n-weeks
@@ -22,7 +22,7 @@ garbage_collection:
       first_week: 2
       expire_after: "07:00"
       collection_days:
-        - tuesday
+        - tue
 
     - name: Plast og Papir
       frequency: every-n-weeks
@@ -30,7 +30,7 @@ garbage_collection:
       first_week: 3
       expire_after: "12:00"
       collection_days:
-        - monday
+        - mon
 
     - name: Metal og Glas
       frequency: every-n-weeks
@@ -38,7 +38,7 @@ garbage_collection:
       first_week: 5
       expire_after: "12:00"
       collection_days:
-        - thursday
+        - thu
 
     - name: Småt Pap
       frequency: every-n-weeks
@@ -46,4 +46,4 @@ garbage_collection:
       first_week: 1
       expire_after: "12:00"
       collection_days:
-        - wednesday
+        - wed
