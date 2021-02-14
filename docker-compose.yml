@@ -55,7 +55,7 @@ services:
       - TZ=Europe/Copenhagen
     labels:
       - "traefik.enable=true"
-      - "traefik.http.routers.pihole.rule=Host(`ha.${DOMAIN}`)"
-      - "traefik.http.routers.pihole.entrypoints=websecure"
-      - "traefik.http.routers.pihole.tls.certresolver=letsencryptresolver"
-      - "traefik.http.services.pihole.loadbalancer.server.port=8123"
+      - "traefik.http.routers.homeassistant.rule=Host(`ha.${DOMAIN}`)"
+      - "traefik.http.routers.homeassistant.entrypoints=websecure"
+      - "traefik.http.routers.homeassistant.tls.certresolver=letsencryptresolver"
+      #- "traefik.http.services.homeassistant.loadbalancer.server.port=8123"
