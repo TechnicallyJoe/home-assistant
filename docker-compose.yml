@@ -47,7 +47,7 @@ services:
     container_name: homeassistant
     image: homeassistant/home-assistant:2021.2.0
     restart: unless-stopped
-    network_mode: host
+    #network_mode: host
     volumes:
       - ./data/homeassistant/config:/config
       - /etc/localtime:/etc/localtime:ro
