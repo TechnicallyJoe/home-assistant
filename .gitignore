@@ -11,5 +11,8 @@ secrets.yaml
 .cloud
 .HA_VERSION
 
-# python
+# custom_components
 __pycache__
+
+# frontend
+*.js.gz
