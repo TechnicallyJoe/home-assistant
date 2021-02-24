@@ -10,6 +10,8 @@ secrets.yaml
 .storage
 .cloud
 .HA_VERSION
+home-assistant.log
+home-assistant_v2.db
 
 # custom_components
 __pycache__
