@@ -1,0 +1,32 @@
+# Sensors for the garbage_collection Integration
+platform: template
+sensors:
+  garbage_collection_farligt_affald_days:
+    friendly_name: "Farligt Affald"
+    unit_of_measurement: "days"
+    value_template: "{{ state_attr('sensor.farligt_affald', 'days') }}"
+
+  garbage_collection_mad_og_restaffald_days:
+    friendly_name: "Mad- og Restaffald"
+    unit_of_measurement: "days"
+    value_template: "{{ state_attr('sensor.mad_og_restaffald', 'days') }}"
+
+  garbage_collection_metal_glas_days:
+    friendly_name: "Metal & Glas"
+    unit_of_measurement: "days"
+    value_template: "{{ state_attr('sensor.metal_glas', 'days') }}"
+
+  garbage_collection_pap_days:
+    friendly_name: "Pap"
+    unit_of_measurement: "days"
+    value_template: "{{ state_attr('sensor.pap', 'days') }}"
+
+  garbage_collection_plast_papir_days:
+    friendly_name: "Plast & Papir"
+    unit_of_measurement: "days"
+    value_template: "{{ state_attr('sensor.plast_papir', 'days') }}"
+
+  garbage_collection_storskrald_days:
+    friendly_name: "Storskrald"
+    unit_of_measurement: "days"
+    value_template: "{{ state_attr('sensor.storskrald', 'days') }}"
